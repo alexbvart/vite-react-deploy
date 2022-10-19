@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.section_app{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    padding-bottom: 16px;
+    padding: 100px 24px ;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+.section_app:before{
+    content: "ZOOMX";
+    font-size: 20vw;
+    position: absolute;
+    color: #0001;
+    display: flex;
+    font-weight: 900;
+    padding-top: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .section_app{
+        padding:  40px 40px 0 ;  
+        overflow: hidden;
+    }
+    .section_app:before{
+        font-size: 20vh;
+        transform: translate(-35%);
+    }
+}

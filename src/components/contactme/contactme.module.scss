@@ -1,0 +1,35 @@
+.sci{
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    li{
+        list-style: none;
+        display: block;
+        color:#fff;
+        margin-right: 4px;
+    }
+    
+    li>*:hover{
+        transition: scale(1.4);
+        transition: 0.6s;
+    }
+}
+
+@media (max-width: 600px) {
+    .sci{
+        position: absolute;  
+        justify-content: flex-start;
+        flex-direction: row;
+        bottom: 10px;
+        right: inherit;
+        margin-top: 40px;
+        li{
+            margin-bottom: 4px;
+        }
+    }
+}

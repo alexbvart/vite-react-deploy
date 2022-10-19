@@ -1,0 +1,33 @@
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px 100px;
+    display: flex;
+    width: 100%;
+    height: 69px;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 1920px; */
+
+    .logo_nike{
+        max-width: 100%;
+        transform: scale(1.33);
+        color: #111;
+        cursor: pointer;
+    }
+    .menu{
+        color: #111;
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        display: flex;
+        flex: 0 0 auto;
+    }
+}
+@media (max-width: 600px) {
+    .header{
+        padding:  20px 16px;  
+    }
+}
